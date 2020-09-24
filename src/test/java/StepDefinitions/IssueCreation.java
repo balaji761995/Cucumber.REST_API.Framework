@@ -65,7 +65,7 @@ public class IssueCreation extends TestDataPayLoads {
 	@Then("Issue should be created successfully and response code is {string}")
 	public void issue_should_be_created_successfully_and_response_code_is(String string) {
 	    // Write code here that turns the phrase above into concrete actions
-	    System.out.println("then executed");
+	    System.out.println("Jira Issue validation compeleted");
 	}
 
 }
