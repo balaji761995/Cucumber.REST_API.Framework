@@ -1,0 +1,94 @@
+Request method:	POST
+Request URI:	http://localhost:8080/rest/auth/1/session
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "balaji761995",
+    "password": "Jun2020@"
+}
+HTTP/1.1 200 
+X-AREQUESTID: 760x150x1
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self'
+X-ASEN: SEN-L15447669
+Set-Cookie: atlassian.xsrf.token=B5AY-ZDKZ-XF2P-NP8I_2d5802a32bf42dd61e16a998b45c117dd7c2305c_lout; Path=/
+X-AUSERNAME: anonymous
+Set-Cookie: JSESSIONID=A569130E4B6ED9159B32ABFCDCD1CC81; Path=/; HttpOnly
+X-Seraph-LoginReason: OK
+Cache-Control: no-cache, no-store, no-transform
+Content-Encoding: gzip
+Vary: User-Agent
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 07:10:20 GMT
+
+{
+    "session": {
+        "name": "JSESSIONID",
+        "value": "A569130E4B6ED9159B32ABFCDCD1CC81"
+    },
+    "loginInfo": {
+        "loginCount": 56,
+        "previousLoginTime": "2020-09-24T12:36:12.885+0530"
+    }
+}
+Request method:	POST
+Request URI:	http://localhost:8080/rest/api/2/issue/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "fields": {
+        "project": {
+            "key": "TP"
+        },
+        "summary": "REST ye merry gentlemen.",
+        "description": "Creating of an issue using project keys and issue type names using the REST API",
+        "issuetype": {
+            "name": "Bug"
+        }
+    }
+}
+HTTP/1.1 403 
+X-AREQUESTID: 760x152x1
+X-ASESSIONID: 1xrn5aq
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self'
+X-ASEN: SEN-L15447669
+X-Seraph-LoginReason: OK
+Set-Cookie: atlassian.xsrf.token=B5AY-ZDKZ-XF2P-NP8I_650510e4f56ec867473b36e66d82c9c874e601ad_lin; Path=/
+X-AUSERNAME: balaji761995
+Cache-Control: no-cache, no-store, no-transform
+Content-Encoding: gzip
+Vary: User-Agent
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 07:10:25 GMT
+
+{
+    "errorMessages": [
+        "You will not be able to create new issues because your Jira evaluation period has expired, please contact your Jira administrators."
+    ],
+    "errors": {
+        
+    }
+}
